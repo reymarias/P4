@@ -1,0 +1,153 @@
+/*website name*/
+.col-sm-4{
+    margin: auto;
+}
+
+main{
+    float: left;
+    width : 70%;
+    height: 105%;
+    margin-left: 0.5em;
+    background-color: #333333;
+}
+aside{
+    float: left;
+    width : 30em;
+    height: 60em;
+    margin-right: 0.5em;
+    background-color: #3d3d3d;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em 1em;
+  }
+  
+  a:hover {
+    background-color: #292929;
+    color: white;
+  }
+
+/*makes aside and new content dissapear instead of being displayed weirdly*/
+@media (max-width: 117em) {
+    aside {
+      display: none;
+    }
+}
+
+@media (max-width: 117em) {
+    #new_content {
+      display: none;
+    }
+}
+
+.yesterday img, .weekly img{
+    width: 50%;
+}
+
+body{
+    background: #333333;
+    align-items: center;
+    min-height: 100%;
+    text-align: center;
+    clear:both;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.5rem;
+}
+
+.container .row {
+    width:65.625em;
+    height:3em;
+    padding:0.125em 0.75em 0.125em 0.75em;
+    font-family:"Roboto", sans-serif;
+    font-weight:400;
+    font-style:normal;
+    font-size:1em;
+    letter-spacing:normal;
+    color:#ffffff;
+    vertical-align:none;
+    text-align:left;
+    text-transform:none;
+    border-color:transparent;
+}
+
+.row{
+    color:white;
+}
+
+/*carousel specific code, I copied it as coders do, I just know that it works best and looks well*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    size: 80%;
+    object-fit: cover;
+    margin: auto;
+    padding-bottom: 10em !important;
+
+}
+
+.container .card{
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+    height: 30%;
+    margin: 1em;
+    color:#ffffff;
+    background-color: #3d3d3d;
+}
+
+.container .card img{
+    object-fit:cover;
+    width: 10em;
+    height: 10em;
+}
+
+aside .ad img{
+width: 40%;  
+height: 40%;  
+text-align: center;
+margin-top: 2em;  
+padding: 2em;   
+object-fit: cover; 
+}
+
+aside .card{
+    border: none;
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: 1em;
+    color:#ffffff;
+    background-color: #3d3d3d;
+}
+
+/*centers the forms*/
+.container .form-group{
+    display: block;
+    text-align: center;
+    width: 50%;
+}
+
+.form-group{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+main img{
+    size: 80%;
+}

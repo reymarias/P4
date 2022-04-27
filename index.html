@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReyRey's Image Hosting</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!--only use is for carousel, however the other pages look too different without it-->       
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">Logo</a>
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Content
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="today_one.html">Most Viewed Today</a>
+                              <a class="dropdown-item" href="new_one.html">New Today</a>
+                              <a class="dropdown-item" href="yesterday.html">Most Viewed Yesterday</a>
+                              <a class="dropdown-item" href="weekly.html">Most Viewed Weekly</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+    <div class="col-sm-4  text-center">
+        <h1>ReyRey's Image Hosting</h1>
+    </div>
+</div>
+
+<!--Need this for aside and main to work-->
+<div id="page">
+
+<!--Content displayed on the left, being the top of yesterday and weekly, as well as an ad-->
+<aside>
+    <div class="yesterday">
+        <h2>Most Viewed Yesterday</h2>
+        <div class="card">
+          <img class="card-img-top" src="img/yesterday.webp" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <a href="yesterday.html" class="btn btn-primary">See Image</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="weekly">
+        <h2>Most Viewed Weekly</h2>
+        <div class="card">
+          <img class="card-img-top" src="img/weekly.webp" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <a href="weekly.html" class="btn btn-primary">See Image</a>
+          </div>
+        </div>
+    </div>
+
+    <div class ="ad">
+        <img src="img/ad.gif" alt="">
+    </div>
+</aside>
+
+<!--main content, I was only able to get the carousel working using another css, so I am using that as my default-->
+<main>
+    <h2>Most Viewed Daily</h2>
+<div class="container">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+  
+        <div class="item active">
+          <a href="today_one.html"> <img src="img/today_one.webp" alt="Most Viewd Today"> </a>
+          <div class="carousel-caption">
+            <h3>Title</h3>
+          </div>
+        </div>
+  
+        <div class="item">
+          <a href="today_two.html"> <img src="img/today_two.webp" alt="Second Most Viewd Today"> </a>
+          <div class="carousel-caption">
+            <h3>Title</h3>
+          </div>
+        </div>
+      
+        <div class="item">
+          <a href="today_three.html"> <img src="img/today_three.webp" alt="Third Most Viewd Today"> </a>
+          <div class="carousel-caption">
+            <div class="carousel-caption">
+              <h3>Title</h3>
+            </div>
+        </div>    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!--bottom of the page content, should be 3 cards-->
+  <div id="new_content" class="container">
+    <h2>New User Content</h2>
+    <div class="card">
+      <img class="card-img-top" src="img/new_one.webp" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Title</h4>
+        <a href="new_one.html" class="btn btn-primary">See Image</a>
+      </div>
+    </div>
+    
+    <div class="card">
+        <img class="card-img-top" src="img/new_two.webp" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <a href="new_two.html" class="btn btn-primary">See Image</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="img/new_three.webp" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <a href="new_three.html" class="btn btn-primary">See Image</a>
+        </div>
+      </div>
+</div>
+</main>
+
+</div>
+
+  <footer class="footer page-footer font-small ">
+    <div class="container">
+       <div class="row">
+           <span class="text-muted">&copy; Reynaldo M. Arias, 2022 |  Terms Of Use  |  Privacy Statement</span>
+       </div>
+    </div>
+ </footer>
+</div>
+
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

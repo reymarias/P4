@@ -1,0 +1,137 @@
+body{
+    background: #333333;
+    align-items: center;
+    min-height: 100%;
+    text-align: center;
+    clear:both;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 0.625em;
+    font-size: 0.5rem;
+}
+
+.container .row {
+    width:65.625em;
+    height:3em;
+    padding:0.125em 0.75em 0.125em 0.75em;
+    font-family:"Roboto", sans-serif;
+    font-weight:400;
+    font-style:normal;
+    font-size:1em;
+    letter-spacing:normal;
+    color:#ffffff;
+    vertical-align:none;
+    text-align:left;
+    text-transform:none;
+    border-color:transparent;
+}
+
+.row{
+    color:white;
+}
+
+main{
+    float: left;
+    width : 70%;
+    height: 105%;
+    margin-left: 0.5em;
+    background-color: #333333;
+}
+
+main img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+}
+
+aside{
+    float: left;
+    width : 30em;
+    height: 91em;
+    margin-right: 0.5em;
+    background-color: #3d3d3d;
+}
+
+/*makes aside dissapear instead of being displayed ontop of main*/
+@media (max-width: 117em) {
+    aside {
+      display: none;
+    }
+}
+
+.today img, .yesterday img, .weekly img{
+    width: 50%;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em 1em;
+  }
+  
+  a:hover {
+    background-color: #292929;
+    color: white;
+  }
+  
+  .next, .previous {
+    background-color: #3d3d3d;
+    color: white;
+    margin: 1em;
+  }
+
+  .next{
+      float: right;
+  }
+
+  .previous{
+    float: left;
+}
+  
+.container .card{
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+    height: 30%;
+    margin: 1em;
+    color:#ffffff;
+    background-color: #3d3d3d;
+}
+
+.container .card img{
+    object-fit:cover;
+    width: 10em;
+    height: 10em;
+}
+
+aside .ad img{
+width: 40%;  
+height: 40%;  
+text-align: center;
+margin-top: 2em;  
+padding: 2em;   
+object-fit: cover; 
+}
+
+aside .card{
+    border: none;
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: 1em;
+    color:#ffffff;
+    background-color: #3d3d3d;
+}
